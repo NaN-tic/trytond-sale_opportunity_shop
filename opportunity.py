@@ -6,10 +6,10 @@ from trytond.transaction import Transaction
 from trytond.pool import Pool, PoolMeta
 
 __all__ = ['SaleOpportunity']
-__metaclass__ = PoolMeta
 
 
 class SaleOpportunity:
+    __metaclass__ = PoolMeta
     __name__ = "sale.opportunity"
     shop = fields.Many2One('sale.shop', 'Shop')
 
